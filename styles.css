@@ -1,0 +1,128 @@
+/* General Styling */
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #e5d7c2;
+}
+
+header .logo h1 {
+  margin: 0;
+  font-size: 24px;
+  font-family: 'Georgia', serif;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+nav ul li {
+  margin-left: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: black;
+}
+
+/* Hero Section */
+.hero {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.hero img {
+  width: 100%;
+  height: 50vh;
+  object-fit: cover;
+  object-position: center;
+}
+
+.hero-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.hero-content h2 {
+  font-size: 48px;
+  font-family: 'Georgia', serif;
+}
+
+.hero-content h3 {
+  font-size: 32px;
+  font-family: 'Georgia', serif;
+}
+
+/* Featured Properties */
+.featured-properties {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 50px;
+  background-color: #e5d7c2;
+}
+
+.featured-properties .property {
+  text-align: center;
+}
+
+.featured-properties .property img {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.featured-properties .property h4 {
+  font-size: 20px;
+  font-family: 'Georgia', serif;
+}
+
+.center-content {
+  text-align: center;
+}
+
+.center-content h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  font-family: 'Georgia', serif;
+}
+
+.center-content p {
+  margin-bottom: 20px;
+}
+
+button {
+  background-color: #b59a78;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #a78565;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #e5d7c2;
+}
