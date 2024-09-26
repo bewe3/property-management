@@ -55,5 +55,5 @@ document.addEventListener('DOMContentLoaded', (event) => {
   };
 
   // Load images for the property (adjust paths and counts as necessary)
-  loadImages('/images/property-2', 36); // Adjust folder path and image count as necessary
+  loadImages('/images/property-1', 30); // Adjust folder path and image count as necessary
 });
