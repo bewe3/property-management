@@ -97,6 +97,7 @@ nav ul li a {
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: 1fr;
   background-color: var(--sand);
+  margin: 0;
 }
 
 .featured-properties .property {
@@ -147,7 +148,7 @@ nav ul li a {
 }
 
 button {
-  max-width: 75%;
+  width: 100%;
   height: 100%;
   background-color: var(--oak);
   border: none;
@@ -155,6 +156,20 @@ button {
   font-size: 2rem;
   cursor: pointer;
   transition: 0.15s;
+}
+
+.map-button {
+  background-color: var(--waves);
+  color: var(--sand);
+  padding: 0.75rem 1.5rem;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.map-button:hover {
+  background-color: var(--fern);
 }
 
 button a,
@@ -174,4 +189,126 @@ footer {
   text-align: center;
   padding: 20px;
   background-color: var(--oak-light);
+}
+
+/* Main content sections */
+main {
+  padding: 2rem;
+  background-color: var(--sand);
+}
+
+section {
+  margin-bottom: 2rem;
+}
+
+h1,
+h2 {
+  color: var(--onyx);
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 0.75rem;
+}
+
+p,
+ul {
+  color: var(--fern-dark);
+  font-size: 1.125rem;
+  line-height: 1.6;
+}
+
+/* Property Overview */
+.property-overview {
+  text-align: center;
+}
+
+.property-overview h1 {
+  font-size: 2.5rem;
+}
+
+.property-overview p {
+  margin: 0.5rem 0;
+  font-size: 1.25rem;
+}
+
+/* Property Description */
+.property-description {
+  text-align: center;
+}
+
+/* Property Features */
+.property-features ul,
+.community-amenities ul,
+.indoor-amenities ul,
+.kitchen-amenities ul,
+.general-amenities ul,
+.faq ul,
+.parking ul,
+.house-rules ul,
+.nearby-activities ul {
+  list-style-type: disc;
+  margin: 1rem 0 0 1.5rem;
+}
+
+.property-features ul li,
+.community-amenities ul li,
+.indoor-amenities ul li,
+.kitchen-amenities ul li,
+.general-amenities ul li,
+.faq ul li,
+.parking ul li,
+.house-rules ul li,
+.nearby-activities ul li {
+  margin-bottom: 0.5rem;
+}
+
+/* General Lists */
+ul {
+  list-style-type: disc;
+  margin-left: 2rem;
+}
+
+/* Accessibility Section */
+.accessibility ul {
+  list-style-type: circle;
+}
+
+/* Buttons */
+
+button:hover,
+.map-button:hover {
+  background-color: var(--fern-dark);
+}
+
+/* Link Styles */
+a {
+  color: var(--onyx);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--fern);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  main {
+    padding: 1rem;
+  }
+  h1 {
+    font-size: 2rem;
+  }
+  h2 {
+    font-size: 1.75rem;
+  }
+  p,
+  ul {
+    font-size: 1rem;
+  }
 }
