@@ -88,6 +88,7 @@
         ]
       }
     </script>
+    <script src="/scripts/gallery1.js"></script>
   </head>
 
   <body>
@@ -386,6 +387,22 @@
         </ul>
       </section>
     </main>
+    <!-- Photo Gallery Section (between <main> and <footer>) -->
+    <section class="photo-gallery">
+      <div class="gallery-container">
+        <div class="gallery-images" id="gallery-images"></div>
+      </div>
+
+      <!-- Modal for full image view -->
+      <div class="modal" id="imageModal">
+        <span class="close" id="closeModal">&times;</span>
+        <img class="modal-content" id="modalImg" />
+        <div class="nav-buttons">
+          <button class="prev" id="prevImg">&#10094;</button>
+          <button class="next" id="nextImg">&#10095;</button>
+        </div>
+      </div>
+    </section>
 
     <footer>
       <p>&copy; 2024 Upper Deck Breeze. All rights reserved.</p>
